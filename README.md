@@ -1,5 +1,4 @@
-# SMSAPP, also known as the Self-Management System application, is an Angular-based platform created to simplify personal organization,
-# enhance skill development, support the pursuit of goals, and facilitate comprehensive life management.
+# SMSAPP, also known as the Self-Management System application, is an Angular-based platform created to simplify personal organization, enhance skill development, support the pursuit of goals, and facilitate comprehensive life management.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
