@@ -13,4 +13,8 @@ export class SharedDbService {
   addUser(user: any) {
     return this.http.post(this.url + "/api/add-user", user);
   }
+
+  getAllUsers() {
+    return this.http.get<any>(this.url + "/api/get-users");
+  }
 }
