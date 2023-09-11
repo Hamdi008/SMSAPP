@@ -12,9 +12,19 @@
         <form class="signup-form">
             <h1>Sign Up</h1>
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required
-                    [(ngModel)]="user.userName">
+                <label for="username">First name</label>
+                <input type="text" id="fristname" name="firstname" placeholder="Enter your first name" required
+                    [(ngModel)]="user.firstName">
+            </div>
+            <div class="form-group">
+                <label for="username">Last name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required
+                    [(ngModel)]="user.lastName">
+            </div>
+            <div class="form-group">
+                <label for="password">Job title</label>
+                <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter your job title" required
+                    [(ngModel)]="user.jobTitle">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -23,7 +33,8 @@
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required [(ngModel)]="user.password">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required
+                    [(ngModel)]="user.password">
             </div>
             <button (click)="addUser()" type="submit">Sign Up</button>
         </form>

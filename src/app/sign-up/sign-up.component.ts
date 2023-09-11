@@ -9,9 +9,11 @@ import { SharedDbService } from '../shared-db.service';
 export class SignUpComponent {
 
   user = {
-    userName: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    password: ""
+    password: "",
+    jobTitle: ""
   }
 
   constructor(private sharedDBService: SharedDbService) {
@@ -25,9 +27,11 @@ export class SignUpComponent {
           console.log(res);
           console.log(this.user);
           this.user = {
-            userName: "",
+            firstName: "",
+            lastName: "",
             email: "",
-            password: ""
+            password: "",
+            jobTitle: ""
           }
         },
 

@@ -11,4 +11,10 @@ export class SignInComponent {
   constructor(private sharedDBService: SharedDbService) {
   }
 
+  getAllUsers() {
+    this.sharedDBService.getAllUsers().subscribe(
+      res => { console.log(res) },
+      err => { console.log(err); }
+    );
+  }
 }
