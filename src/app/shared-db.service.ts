@@ -6,5 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class SharedDbService {
 
-  constructor( private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
+
+  private url = "http://127.0.0.1:8080";
+
+  addUser(user: any) {
+    return this.http.post(this.url + "/api/add-user", user);
+  }
 }
