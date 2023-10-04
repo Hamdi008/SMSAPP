@@ -2,13 +2,24 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #7798f9;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+section {
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -60,4 +71,11 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }

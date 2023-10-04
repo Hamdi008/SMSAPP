@@ -1,0 +1,84 @@
+/* styles.css */
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.mission {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}

@@ -8,6 +8,10 @@ header {
     height: 50px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .menu {
     margin-top: 12px;
 }

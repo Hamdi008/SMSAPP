@@ -1,44 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-</head>
-
-<body>
-    <div class="container">
-        <form class="signup-form">
-            <h1>Sign Up</h1>
-            <div class="form-group">
-                <label for="username">First name</label>
-                <input type="text" id="fristname" name="firstname" placeholder="Enter your first name" required
-                    [(ngModel)]="user.firstName">
-            </div>
-            <div class="form-group">
-                <label for="username">Last name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required
-                    [(ngModel)]="user.lastName">
-            </div>
-            <div class="form-group">
-                <label for="password">Job title</label>
-                <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter your job title" required
-                    [(ngModel)]="user.jobTitle">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required
-                    [(ngModel)]="user.email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required
-                    [(ngModel)]="user.password">
-            </div>
-            <button (click)="addUser()" type="submit">Sign Up</button>
-        </form>
-    </div>
-</body>
-
-</html>
+<main>
+    <section class="container-section">
+        <div class="container">
+            <form class="signup-form">
+                <h1>Sign Up</h1>
+                <div class="form-group">
+                    <label for="username">First name</label>
+                    <input type="text" id="fristname" name="firstname" placeholder="Enter your first name" required
+                        [(ngModel)]="user.firstName">
+                </div>
+                <div class="form-group">
+                    <label for="username">Last name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required
+                        [(ngModel)]="user.lastName">
+                </div>
+                <div class="form-group">
+                    <label for="password">Job title</label>
+                    <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter your job title" required
+                        [(ngModel)]="user.jobTitle">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        [(ngModel)]="user.email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required
+                        [(ngModel)]="user.password">
+                </div>
+                <button (click)="addUser()" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <app-footer></app-footer>
+</main>

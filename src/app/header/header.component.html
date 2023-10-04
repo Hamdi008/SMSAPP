@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-3">
                 <div class="logo">
-                    <img class="logo" src="../assets/logo.png" alt="Logo is missing">
+                    <img routerLink="/home" class="logo" src="../assets/logo.png" alt="Logo is missing">
                 </div>
             </div>
             <div class="col-md-9 col-sm-9 col-9 text-end">
@@ -14,11 +14,11 @@
                 </div>
                 <div class="menu" [class.menuClass]="menuVariable">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
+                        <li routerLink="/home">Home</li>
+                        <li routerLink="/about">About</li>
                         <li>Contact</li>
-                        <li>SignUp</li>
-                        <li>SignIn</li>
+                        <li routerLink="/sign-up">SignUp</li>
+                        <li routerLink="/sign-in">SignIn</li>
                     </ul>
                 </div>
             </div>
