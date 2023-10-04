@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SharedDbService } from '../shared-db.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,39 +8,22 @@ import { SharedDbService } from '../shared-db.service';
 })
 export class SignUpComponent {
 
-  user = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    jobTitle: ""
-  }
+  formData: any = {}; // Initialize an empty object to store user input
 
-  constructor(private sharedDBService: SharedDbService) {
+  constructor(private http: HttpClient) { }
 
-  }
-
-  addUser() {
-    this.sharedDBService.addUser(this.user)
+  onSubmit() {
+    // Send a POST request to your REST API with this.formData
+    this.http.post('http://localhost:8090/api/signup', this.formData)
       .subscribe(
-        res => {
-          console.log(res);
-          console.log(this.user);
-          this.user = {
-            firstName: "",
-            lastName: "",
-            email: "",
-            password: "",
-            jobTitle: ""
-          }
+        (response) => {
+          // Handle the API response (e.g., show a success message)
+          console.log('Registration successful:', response);
         },
-
-        err => {
-          console.log(err);
+        (error) => {
+          // Handle API errors (e.g., show an error message)
+          console.error('Registration failed:', error);
         }
       );
-
-
-
   }
 }

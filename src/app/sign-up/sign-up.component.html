@@ -1,34 +1,34 @@
 <main>
     <section class="container-section">
         <div class="container">
-            <form class="signup-form">
+            <form class="signup-form" (ngSubmit)="onSubmit()">
                 <h1>Sign Up</h1>
                 <div class="form-group">
                     <label for="username">First name</label>
-                    <input type="text" id="fristname" name="firstname" placeholder="Enter your first name" required
-                        [(ngModel)]="user.firstName">
+                    <input type="text" id="fristname" name="firstname" placeholder="Enter your first name"
+                        [(ngModel)]="formData.firstName" required>
                 </div>
-                <div class="form-group">
+                <div class=" form-group">
                     <label for="username">Last name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required
-                        [(ngModel)]="user.lastName">
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name"
+                        [(ngModel)]="formData.lastName" required>
                 </div>
-                <div class="form-group">
+                <div class=" form-group">
                     <label for="password">Job title</label>
-                    <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter your job title" required
-                        [(ngModel)]="user.jobTitle">
+                    <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter your job title"
+                        [(ngModel)]="formData.jobTitle" required>
                 </div>
-                <div class="form-group">
+                <div class=" form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required
-                        [(ngModel)]="user.email">
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        [(ngModel)]="formData.email" required>
                 </div>
-                <div class="form-group">
+                <div class=" form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required
-                        [(ngModel)]="user.password">
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                        [(ngModel)]="formData.password" required>
                 </div>
-                <button (click)="addUser()" type="submit">Sign Up</button>
+                <button type=" submit">Sign Up</button>
             </form>
         </div>
     </section>
